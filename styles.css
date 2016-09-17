@@ -3,10 +3,10 @@
   font-family: "open sans"
 }
 
-.body{
+/*.body{
   margin: 0;
   padding: 0;
-}
+}*/
 
 .container{
   position: relative;
@@ -44,20 +44,33 @@ nav{
 
 .main-nav{
   font-family: "Oswald", sans-serif;
-  display: inline-block;
+  display: flex;
   position: absolute;
-  top: 3px;
-  right: 176px;
+  top: 18px;
+  right: 172px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.main-nav-about{
+  font-family: "oswald";
+}
+
+.main-nav-search{
+  padding-left: 15px;
+  font-family: "oswald";
 }
 
 /*http://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only*/
 .fa-search{
+  margin-top: 4px;
   -moz-transform: scaleX(-1);    /* Gecko */
   -o-transform: scaleX(-1);      /* Opera */
   -webkit-transform: scaleX(-1); /* Webkit */
   transform: scaleX(-1);         /* Standard */
   filter: FlipH;
+  padd
 }
 
 nav li{
@@ -382,4 +395,118 @@ header h1, header h3{
   line-height: 24px;
   color: #A3B3BF;
   margin-left: 2px;
+  clear: both;
+}
+
+.footer{
+  /*width: 1300px
+  margin: 0 auto;*/
+}
+
+.footer-title{
+  text-align: center;
+  /* position: relative; */
+  font-size: 63px;
+  font-family: "oswald";
+  text-transform: uppercase;
+  border-top: 2px solid #E1E7EA;
+  margin-top: 66px;
+  padding-top: 25px;
+  color: #083452;
+  margin-bottom: 29px;
+}
+
+.clearfix:after {
+  clear: both;
+  content:'';
+  display: block;
+}
+
+.footerone, .footertwo, .footerthree, .footerfour{
+  float: left;
+  margin: 0;
+  position: relative;
+  height: 330;
+  width: 325;
+  /*background-image: url(http://unsplash.it/325/330);*/
+  font-family: "oswald"
+}
+
+.footerone:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 97, 172, 0.8);
+}
+
+.footerthree:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 97, 172, 0.8);
+}
+
+.footerfour:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 97, 172, 0.8);
+}
+
+
+.footerone-text{
+  font-size: 29px;
+  color: #083452;
+  position: absolute;
+  bottom: 13px;
+  font-family: "oswald";
+  padding-left: 17px;
+  text-transform: uppercase;
+}
+
+.footertwo-text{
+  font-size: 29px;
+  color: white;
+  position: absolute;
+  bottom: 13px;
+  font-family: "oswald";
+  padding-left: 17px;
+  text-transform: uppercase;
+}
+.footerthree-text{
+  font-size: 33px;
+  color: #083452;
+  position: absolute;
+  bottom: 21px;
+  line-height: 1;
+  font-family: "oswald";
+  padding-left: 17px;
+  text-transform: uppercase;
+}
+.footerfour-text{
+  font-size: 29px;
+  color: #083452;
+  position: absolute;
+  bottom: 13px;
+  font-family: "oswald";
+  padding-left: 17px;
+  text-transform: uppercase;
+}
+
+.bottom-nav{
+  width: 1300px;
+  height: 97px;
+  margin-top: -5px;
+  display: inline-block;
+  position: relative;
+  background-color: #083452;
 }
