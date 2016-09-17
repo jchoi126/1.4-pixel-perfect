@@ -201,6 +201,10 @@ header h1, header h3{
   padding-top: 11.5px;
 }
 
+.u-chic{
+  color: #A3B3BF;
+}
+
 .quotes{
   text-transform: uppercase;
   font-size: 27px;
@@ -212,6 +216,11 @@ header h1, header h3{
   padding-top: 19px;
   margin-top: 20px;
   padding-bottom: 10px;
+}
+
+.p-hyperlink{
+  text-decoration: underline;
+  color: #0F6DB3;
 }
 
 .p4{
@@ -352,6 +361,7 @@ header h1, header h3{
   padding-top: 0px;
   font-size: 14px;
   padding-left: 12px;
+  color: #A3B3BF;
 }
 
 .right-image{
@@ -436,10 +446,16 @@ header h1, header h3{
   position: absolute;
   content: "";
   top: 0;
-  bottom: 5px;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 97, 172, 0.8);
+}
+
+/*http://stackoverflow.com/questions/5777210/how-to-write-hover-condition-for-abefore-and-aafter*/
+.footerone:hover:before{
+  background-color: transparent;
+  color: white;
 }
 
 .footerthree:before{
@@ -452,6 +468,11 @@ header h1, header h3{
   background-color: rgba(0, 97, 172, 0.8);
 }
 
+.footerthree:hover:before{
+  background-color: transparent;
+  color: white;
+}
+
 .footerfour:before{
   position: absolute;
   content: "";
@@ -462,6 +483,10 @@ header h1, header h3{
   background-color: rgba(0, 97, 172, 0.8);
 }
 
+.footerfour:hover:before{
+  background-color: transparent;
+  color: white;
+}
 
 .footerone-text{
   font-size: 29px;
@@ -502,11 +527,83 @@ header h1, header h3{
   text-transform: uppercase;
 }
 
-.bottom-nav{
+.bottom-bar{
   width: 1300px;
   height: 97px;
   margin-top: -5px;
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   background-color: #083452;
+}
+
+.nav-bar{
+  position:relative;
+  display: flex;
+  color: #A2B3BF;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tiy{
+  height: 32px;
+  padding-left: 164px;
+  margin-top: -16px;
+}
+
+.tag-line{
+  /*float: right;*/
+  padding-left: 10px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  word-spacing: -3px;}
+
+.nav-items{
+  padding-left: 297px;
+  padding-bottom: 11px;
+  font-size: 14px;
+}
+
+.nav-items:hover {
+  color: #838b8b;
+}
+
+/*http://stackoverflow.com/questions/6008324/fade-effect-on-link-hover*/
+.hyper-text{
+/* First we need to help some browsers along for this to work.
+   Just because a vendor prefix is there, doesn't mean it will
+   work in a browser made by that vendor either, it's just for
+   future-proofing purposes I guess. */
+-o-transition:color .2s ease-out, background 2s ease-in;
+-ms-transition:color .2s ease-out, background 2s ease-in;
+-moz-transition:color .2s ease-out, background 2s ease-in;
+-webkit-transition:color .2s ease-out, background 2s ease-in;
+/* ...and now for the proper property */
+transition:color .2s ease-out, background 2s ease-in;
+}
+a:hover, i:hover {
+  color: #838b8b;
+}
+
+.main-nav-about:hover {
+  color: #838b8b;
+}
+
+.main-nav-search:hover {
+  color: #838b8b;
+}
+
+.read-comments-text:hover {
+  color: #838b8b;
+}
+
+.read-later-text:hover{
+  color: #838b8b;
+}
+
+.read-share:hover {
+  color: #838b8b;
+}
+
+.right-social-media:hover {
+  color: #838b8b;
 }
