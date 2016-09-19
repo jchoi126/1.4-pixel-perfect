@@ -452,7 +452,22 @@ header h1, header h3{
   background-color: rgba(0, 97, 172, 0.8);
 }
 
+.footertwo:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 97, 172, 0.8);
+}
+
 /*http://stackoverflow.com/questions/5777210/how-to-write-hover-condition-for-abefore-and-aafter*/
+.footertwo:hover:before{
+  background-color: transparent;
+  color: white;
+}
+
 .footerone:hover:before{
   background-color: transparent;
   color: white;
@@ -507,6 +522,18 @@ header h1, header h3{
   padding-left: 17px;
   text-transform: uppercase;
 }
+
+.footertwo-text{
+  font-size: 33px;
+  color: #083452;
+  position: absolute;
+  bottom: 21px;
+  line-height: 1;
+  font-family: "oswald";
+  padding-left: 17px;
+  text-transform: uppercase;
+}
+
 .footerthree-text{
   font-size: 33px;
   color: #083452;
